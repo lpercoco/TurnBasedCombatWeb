@@ -169,7 +169,7 @@ public class CtrlCombate {
 					//jugador2 defiende
 					jugador2.defiende();
 					}
-			generarNuevoTurno();
+			//generarNuevoTurno();
 	    }
 
 	}

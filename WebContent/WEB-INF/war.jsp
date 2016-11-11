@@ -43,6 +43,7 @@
 		Personaje p1= ((Personaje)session.getAttribute("P1"));
 		Personaje p2= ((Personaje)session.getAttribute("P2"));
 	%>
+	
 	 
 	<% ctrl.generarNuevoTurno(); %> 
 	TURNO ACTUAL: 

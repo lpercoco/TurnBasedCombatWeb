@@ -44,6 +44,23 @@
 		Personaje p2= ((Personaje)session.getAttribute("P2"));
 	%>
 	
+	<%if(p1.getVidaActual()<=0)
+		{request.getSession().setAttribute("JGanador",p2);
+		System.out.println("ganador j2");
+		}
+
+	 if(p2.getVidaActual()<=0)
+		{request.getSession().setAttribute("JGanador",p1);
+		 System.out.println("ganador j1");
+		}
+	 
+	 if(p1.getVidaActual()<=0 || p2.getVidaActual()<=0)
+			//response.sendRedirect("WEB-INF/war.jsp");
+	    	//response.sendRedirect("WEB-INF/winner.jsp");
+
+        	 request.getRequestDispatcher("winner.jsp").forward(request, response);
+	 %>
+	
 	 
 	<% ctrl.generarNuevoTurno(); %> 
 	TURNO ACTUAL: 

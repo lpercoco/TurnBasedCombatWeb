@@ -90,9 +90,9 @@ public class CtrlCombate {
     		}
     	}
     	
-    	if(!finCombate){
-    		generarNuevoTurno();
-    	}
+    	//if(!finCombate){
+    	//	generarNuevoTurno();
+    	//}
     	
     }
 

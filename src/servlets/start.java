@@ -67,7 +67,6 @@ public class start extends HttpServlet {
 		request.getSession().setAttribute("P1", p1);
 		request.getSession().setAttribute("P2", p2);
 		
-		//prueba
 		ctrlC.setJugador1(p1);
 		ctrlC.setJugador2(p2);
 		ctrlC.generarPrimerTurnoAleatorio();
